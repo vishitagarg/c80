@@ -6,7 +6,7 @@ export default class HomeScreen extends Component {
 render() {
 return (
 <View style={styles.container}>
-<SafeAreaView styles={style.droidSafeArea}/>
+<SafeAreaView style={styles.droidSafeArea}/>
 <ImageBackground source={require('../assets/bg_image.png')} style= {styles.backgroundImage}>
 < View style={styles.titleBar}>
 <Text style={styles.titleText}>
@@ -15,17 +15,17 @@ ISS Tracker App
 </View>
 
 <TouchableOpacity style={styles.routeCard} onPress={()=>this.props.navigation.navigate("ISSLocation")} >
-    <Text style={style.routeText}> ISS Location </Text>
-    <Text style={style.knowMore}>{"Know More ---->"}</Text>
-    <Text style={style.bgDigit}>1</Text>
+    <Text style={styles.routeText}> ISS Location </Text>
+    <Text style={styles.knowMore}>{"Know More ---->"}</Text>
+    <Text style={styles.bgDigit}>1</Text>
     <Image source={require("../assets/iss_icon.png")} style={styles.iconImage}></Image>
-
+        
 </TouchableOpacity>
 
 <TouchableOpacity style={styles.routeCard} onPress={()=>this.props.navigation.navigate("Meteors")}>
-    <Text style={style.routeText}> Meteors </Text>
-    <Text style={style.knowMore}>{"Know More ---->"}</Text>
-    <Text style={style.bgDigit}>1</Text>
+    <Text style={styles.routeText}> Meteors </Text>
+    <Text style={styles.knowMore}>{"Know More ---->"}</Text>
+    <Text style={styles.bgDigit}>1</Text>
     <Image source={require("../assets/meteor_icon.png")} style={styles.iconImage}></Image>
 </TouchableOpacity>
 </ImageBackground>
