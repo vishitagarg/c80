@@ -82,7 +82,7 @@ export default class IssLocationScreen extends Component {
                          <Text style={styles.infoText}>Velocity (KM/H): {this.state.location.velocity} </Text>
                        </View>
 
-                    </ImageBackground>
+                    </ImageBackground>     
                 </View>
             )
         }  
